@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>SPRING Mobility</title>
+<title>SPRING Mobility: About Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,10 +19,6 @@ body, html {
   height: 100%;
   line-height: 1.8;
   background-color: white;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -48,6 +44,15 @@ html {
   color: black;
 }
 
+.profilePic {
+  padding: 24px;
+  border-radius: 20%;
+}
+
+.profileBlurb {
+  padding: 24px;
+}
+
 /* Parallax formatting*/
 .bgimg {
   background-image: url("./images/homepagecover.jpg");
@@ -59,6 +64,10 @@ html {
   position: relative;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0;
+}
 </style>
 
 <head>
@@ -69,9 +78,8 @@ html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <h1 style="color:white; text-align: center">SPRING Mobility</h1>
-    <h3 style="color:white; text-align: center">Welcome to the Future of Movement</h3>
-    <a style="color:white; text-align: center" href="#calltoaction" >Join the Community</a>
+    <h1 style="color:white; text-align: center">ABOUT Us</h1>
+    <h3 style="color:white; text-align: center">Welcome to Us</h3>
   </div>
 </div>
 
@@ -81,30 +89,15 @@ html {
   <a href="/index.html">Home</a>
 </div>
 
-<div class="row" id="introduction">
-  <div class="col-12">
-    <h3 style="text-align: center"><b>Defining the New Generation of Mobility Aids, Together.</b></h3>
-    <p style="text-align: center">Imagine a world in which mobility aids are more than functional; where they are <b>customizable, adaptable,</b> and an <b>expression of who you are.</b></p>
-    <p style="text-align: center">It's time for young mobility aid users' to have their voices heard by the Assistive Technology (AT) industry.  You deserve mobility aids that <b>enable</b> you, and are built with your needs in mind. </p>
+<div class="row">
+  <div class="col-4">
+    <img src="./images/personalPic.jpg" style="width:100%" class="profilePic">
+  </div>
+  <div class="col-8 profileBlurb">
+    <h2>Why hello there</h2>
+    <p>Nothing to see here, keep scrolling</p>
   </div>
 </div>
-
-<div class="row" id="solution">
-  <div class="col-12">
-    <h3 style="text-align: center"><b>Defining the New Generation of Mobility Aids, Together.</b></h3>
-    <p style="text-align: center">Imagine a world in which mobility aids are more than functional; where they are <b>customizable, adaptable,</b> and an <b>expression of who you are.</b></p>
-    <p style="text-align: center">It's time for young mobility aid users' to have their voices heard by the Assistive Technology (AT) industry.  You deserve mobility aids that <b>enable</b> you, and are built with your needs in mind. </p>
-  </div>
-</div>
-
-<div class="row" id="calltoaction">
-  <div class="col-12">
-    <h3 style="text-align: center"><b>Defining the New Generation of Mobility Aids, Together.</b></h3>
-    <p style="text-align: center">Imagine a world in which mobility aids are more than functional; where they are <b>customizable, adaptable,</b> and an <b>expression of who you are.</b></p>
-    <p style="text-align: center">It's time for young mobility aid users' to have their voices heard by the Assistive Technology (AT) industry.  You deserve mobility aids that <b>enable</b> you, and are built with your needs in mind. </p>
-  </div>
-</div>
-
 
 <script>
   var prevScrollpos = window.pageYOffset;
