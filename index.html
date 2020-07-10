@@ -91,16 +91,17 @@ a.calltoaction {
 
 input[type=submit] {
   background-color: transparent;
-  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding:4px;
   font-size: 20px;
-  text-decoration: underline;
   cursor: pointer;
   transition: all .2s ease-in;
 }
 
 input[type=submit]:hover {
   transform: scale(1.1);
-  text-decoration: underline;
 }
 
 input[type=text], input[type=email] {
@@ -197,7 +198,7 @@ input[type=text], input[type=email] {
         <input type="email" id="email" name="email"><br><br>
         <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
         <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
-        <input type="submit" value="Get in touch!">
+        <input type="submit" value="Sign Up">
       </form> 
     </div>
     <div class="col-1"></div>
