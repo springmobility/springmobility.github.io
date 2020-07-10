@@ -26,6 +26,10 @@ html {
   scroll-behavior: smooth;
 }
 
+footer {
+  background-color: lightgrey;
+}
+
 #navbar {
   background-color: transparent;
   position: fixed;
@@ -68,13 +72,27 @@ html {
 }
 
 .calltoaction:hover {
-  text-decoration: none;
   color: white;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .row {
   padding: 48px;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  border: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 </style>
@@ -130,25 +148,6 @@ html {
   <div class="col-1"></div>
 </div>
 
-<div class="row" id="calltoaction">
-  <div class="col-1"></div>
-  <div class="col-5 align-self-center">
-    <h4 style="text-align: center">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h4>
-  </div>
-  <div class="col-5">
-    <form action="https://formspree.io/mbjzzvdo" method="POST">
-      <label for="fname">Preferred Name:</label><br>
-      <input type="text" id="pname" name="pname" value="Name"><br>
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
-      <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
-      <input type="submit" value="Get in touch!">
-    </form> 
-  </div>
-  <div class="col-1"></div>
-</div>
-
 
 <script>
   var prevScrollpos = window.pageYOffset;
@@ -165,8 +164,28 @@ html {
 
 </body>
 
-<footer class="row">
-  <div class="col-12 w3-center">
+<footer id="calltoaction">
+  <!-- Newsletter signup -->
+  <div class="row" id="calltoaction" style="padding: 24px">
+    <div class="col-1"></div>
+    <div class="col-5 align-self-center">
+      <h4 style="text-align: center">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h4>
+    </div>
+    <div class="col-5">
+      <form action="https://formspree.io/mbjzzvdo" method="POST">
+        <label for="fname">Preferred Name:</label><br>
+        <input type="text" id="pname" name="pname"><br>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
+        <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
+        <input type="submit" value="Get in touch!">
+      </form> 
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <!-- SPRING logo -->
+  <div class="col-12 w3-center" style="padding: 12px">
     <img src="./logos/logo.png" style="max-height:48px">
   </div>
 </footer>
