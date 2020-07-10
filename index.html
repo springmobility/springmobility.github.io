@@ -85,7 +85,7 @@ input[type=submit] {
   background-color: transparent;
   border: 2px;
   font-size: 20px;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
   transition: all .2s ease-in;
 }
@@ -93,6 +93,10 @@ input[type=submit] {
 input[type=submit]:hover {
   transform: scale(1.1);
   text-decoration: underline;
+}
+
+input[type=text], input[type=email] {
+  width: 75%;
 }
 
 </style>
@@ -165,8 +169,13 @@ input[type=submit]:hover {
 </body>
 
 <footer id="calltoaction">
-  <!-- Newsletter signup -->
-  <div class="row" id="calltoaction" style="padding: 24px">
+  
+  <div class="row" id="calltoaction" style="padding: 12px">
+    <!-- Join the community banner -->
+    <div class="col-12 align-self-center" style="padding: 24px">
+      <h2 style="text-align: center">Join the Community!</h2>
+    </div>
+    <!-- Newsletter signup -->
     <div class="col-1"></div>
     <div class="col-5 align-self-center">
       <h4 style="text-align: center">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h4>
@@ -183,11 +192,12 @@ input[type=submit]:hover {
       </form> 
     </div>
     <div class="col-1"></div>
+    <!-- SPRING logo -->
+    <div class="col-12 w3-center" style="padding: 24px">
+      <img src="./logos/logo.png" style="max-height:48px">
+    </div>
   </div>
-  <!-- SPRING logo -->
-  <div class="col-12 w3-center" style="padding: 12px">
-    <img src="./logos/logo.png" style="max-height:48px">
-  </div>
+
 </footer>
 
 </html>
