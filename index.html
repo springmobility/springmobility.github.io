@@ -131,9 +131,22 @@ html {
 </div>
 
 <div class="row" id="calltoaction">
-  <div class="col-12">
-    <h4 style="text-align: center">This is where the newsletter will go, when I figure out how to do that</h4>
+  <div class="col-1"></div>
+  <div class="col-5 align-self-center">
+    <h4 style="text-align: center">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h4>
   </div>
+  <div class="col-5">
+    <form action="https://formspree.io/mbjzzvdo" method="POST">
+      <label for="fname">Preferred Name:</label><br>
+      <input type="text" id="pname" name="pname" value="Name"><br>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
+      <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
+      <input type="submit" value="Get in touch!">
+    </form> 
+  </div>
+  <div class="col-1"></div>
 </div>
 
 
@@ -152,13 +165,10 @@ html {
 
 </body>
 
-<!-- <footer class="w3-center" style="background-color: lightgrey">
-  <div class="w3-large w3-section" style="background-color: lightgrey">
-    <a target="_blank" href="mailto:avkashmukhi@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-    <a target="_blank" href="https://www.instagram.com/avkashmukhi/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a target="_blank" href="https://www.linkedin.com/in/avkash-mukhi/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a target="_blank" href="https://medium.com/@avkashmukhi"><i class="fa fa-medium w3-hover-opacity"></i></a>
+<footer class="row">
+  <div class="col-12 w3-center">
+    <img src="./logos/logo.png" style="max-height:48px">
   </div>
-</footer> -->
+</footer>
 
 </html>
