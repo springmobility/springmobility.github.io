@@ -29,7 +29,7 @@ html {
 }
 
 footer {
-  background-color: lightgrey;
+  background-color: rgba(25,25,25,0.25);
 }
 
 #navbar {
@@ -68,7 +68,7 @@ footer {
 }
 
 .titlelogo {
-  max-height: 72px;
+  max-height: 64px;
   vertical-align: middle;
 }
 
@@ -82,6 +82,7 @@ footer {
 a.join {
   border-style: solid;
   border-color: white;
+  border-radius: 4px;
   border-width: 2px;
   padding:2px;
 }
@@ -92,16 +93,28 @@ a.join {
   text-decoration: none;
 }
 
+button {
+  background-color: transparent;
+  /*outline: 0;*/
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
 .row {
   padding: 48px;
 }
 
 input[type=submit] {
   background-color: transparent;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
-  padding:4px;
+  border: 2px solid black;
+  border-radius: 4px; 
+  padding: 2px;
   font-size: 20px;
   cursor: pointer;
   transition: all .2s ease-in;
@@ -113,6 +126,9 @@ input[type=submit]:hover {
 
 input[type=text], input[type=email] {
   width: 75%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
 }
 
 </style>
@@ -127,7 +143,7 @@ input[type=text], input[type=email] {
 <div class="bgimg w3-animate-opacity w3-display-container w3-text-white" id="home">
   <div class="w3-display-middle text-center">
     <img src="./logos/logo_white.png" class="titlelogo" alt="SPRING mobility">
-    <h3 style="padding: 6px">Welcome to the Future of Movement</h3>
+    <h3 style="padding: 6px">Movement made Custom</h3>
     <h4 class="join"><a class="join" href="#join">Join the Community</a></h4>
   </div>
 </div>
@@ -155,7 +171,7 @@ input[type=text], input[type=email] {
     <p style="text-align: center">Designed to empower, SPRING mobility aids provide the support you need to move with comfort and confidence. Our customizable aids can adapt to every occasion; from use around the home, to a formal party, and anywhere else life takes you. With an emphasis on modularity, SPRING mobility aids will give you the choice to swap out handles and cane tips, to give you the grip and support you need, when you need it.</p>
   </div>
   <div class="col-12 col-lg-5">
-    <img src="./images/terrncanerender.png" style="width:100%">
+    <img src="./images/GIFLOOP2.gif" style="width:100%" alt="Render of the TERRN modular concept cane presented in purple and silver">
   </div>
   <div class="col-1"></div>
 </div>
@@ -164,7 +180,7 @@ input[type=text], input[type=email] {
   <div class="col-lg-1"></div>
   <div class="col-12 col-lg-10">
     <h3 style="text-align: center"><b>IT'S TIME TO EXPECT MORE.</b></h3>
-    <p style="text-align: center">Our mission is to work with the disabled community to make the products that you want, the way you want them. To do this, we need to collaborate with you to discover <b>what mobility aids can and should be.</b></p>
+    <p style="text-align: center">Our mission is to work with the disabled community to make the products that you want, the way you want them. To do this, we need to collaborate with you to discover <b>what the future of mobility aids can and should be.</b></p>
   </div>
   <div class="col-lg-1"></div>
 </div>
@@ -185,36 +201,32 @@ input[type=text], input[type=email] {
 
 </body>
 
-<footer id="join">
+<footer>
   
   <div class="row" id="join" style="padding: 12px">
-    <!-- Join the community banner -->
-    <div class="col-12 align-self-center" style="padding: 24px">
-      <h2 style="text-align: center">Join the Community!</h2>
-    </div>
     <!-- Newsletter signup -->
-    <div class="col-1"></div>
-    <div class="col-12 col-lg-5 align-self-center">
-      <h4 style="text-align: center">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h4>
+    <div class="col-12 col-lg-10 align-self-center order-lg-12">
+      <h3 style="text-align: center"><b>JOIN THE COMMUNITY!</b></h3>
+      <h5 style="text-align: center; max-width: 75%; margin-left: auto; margin-right: auto">Sign up for updates about our upcoming product launch, or to join the growing group of beta users providing feedback to make this product perfect for you.</h5>
+      <div class="w3-center">
+        <form action="https://formspree.io/xyynbjqv" method="POST">
+          <label for="fname">Preferred Name:</label><br>
+          <input type="text" id="pname" name="pname"><br>
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
+          <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
+          <input type="submit" value="Sign Up">
+        </form> 
+      </div>
     </div>
-    <div class="col-12 col-lg-5 w3-center">
-      <form action="https://formspree.io/xyynbjqv" method="POST">
-        <label for="fname">Preferred Name:</label><br>
-        <input type="text" id="pname" name="pname"><br>
-        <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="checkbox" id="ambassador" name="ambassador" value="Ambassador">
-        <label for="ambassador"> Tell me about the SPRING Mobility ambassador program!</label><br>
-        <input type="submit" value="Sign Up">
-      </form> 
-    </div>
-    <div class="col-1"></div>
     <!-- SPRING logo -->
-    <div class="col-12 w3-center" style="padding: 24px">
-      <img src="./logos/logo_rainbow.png" style="max-height:48px">
+    <div class="col-12 col-lg-2 w3-center order-lg-1" style="padding: 24px">
+      <img src="./logos/logo_rainbow.png" style="max-height:32px">
       <p><button>
         <a target="_blank" href="https://www.instagram.com/spring.mobility/"><i class="fa fa-instagram"></i></a>
         <a target="_blank" href="mailto:hello@springmobility.ca"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+        <a target="_blank" href="https://www.facebook.com/springmobilityca/"><i class="fa fa-facebook w3-hover-opacity"></i></a>
       </button></p>
     </div>
   </div>
